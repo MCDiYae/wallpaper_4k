@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:wallpaper_ui/core/utils/approute.dart';
+
 import 'package:wallpaper_ui/data/models/wallpaper_model.dart';
 import 'package:wallpaper_ui/data/repositories/wallpaper_repository.dart';
+import 'package:wallpaper_ui/views/wallpaper_view.dart';
 
 class WallpaperList extends StatelessWidget {
   final String category;
@@ -34,7 +34,13 @@ class WallpaperList extends StatelessWidget {
               final wallpaper = wallpapers![index];
               return GestureDetector(
                 onTap: () {
-                  GoRouter.of(context).push(AppRoute.kWallPage);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>
+                          WallpaperPage(imageUrl: wallpaper.src.portrait),
+                    ),
+                  );
                 },
                 child: Image.network(wallpaper.src.portrait),
               );

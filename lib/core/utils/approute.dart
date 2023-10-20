@@ -26,8 +26,12 @@ abstract class AppRoute {
         ),
       ),
       GoRoute(
-        path: kWallPage,
-        builder: (context, state) => const WallpaperPage(),
+        path: AppRoute.kWallPage,
+        builder: (context, state) {
+          final imageUrl = state.pathParameters['imageUrl']
+              as String; // Récupérez l'URL de l'image.
+          return WallpaperPage(imageUrl: imageUrl);
+        },
       ),
     ],
   );
