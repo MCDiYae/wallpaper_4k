@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:wallpaper_ui/core/utils/approute.dart';
 import 'package:wallpaper_ui/data/models/wallpaper_model.dart';
 import 'package:wallpaper_ui/data/repositories/wallpaper_repository.dart';
 
@@ -30,8 +32,12 @@ class WallpaperList extends StatelessWidget {
             itemCount: wallpapers?.length,
             itemBuilder: (context, index) {
               final wallpaper = wallpapers![index];
-              return Image.network(wallpaper.src
-                  .portrait); // Utilisez l'URL de l'image du modèle Wallpaper
+              return GestureDetector(
+                onTap: () {
+                  GoRouter.of(context).push(AppRoute.kWallPage);
+                },
+                child: Image.network(wallpaper.src.portrait),
+              );
             },
           );
         } else {
