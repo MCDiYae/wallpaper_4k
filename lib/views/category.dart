@@ -27,7 +27,9 @@ class CategoryPage extends StatelessWidget {
         ),
         body: Padding(
           padding: const EdgeInsets.all(16.0),
-          child: const WallpaperList(),
+          child: WallpaperList(
+            category: categoryName,
+          ),
         ),
       ),
     );
