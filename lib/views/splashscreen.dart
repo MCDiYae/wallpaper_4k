@@ -14,27 +14,29 @@ class SplashScreen extends StatelessWidget {
       // Utilisez AppRoute pour naviguer vers la page d'accueil
       AppRoute.router.go(AppRoute.kHome);
     });
-    return Scaffold(
-      body: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage(AssetsData.splashImg), fit: BoxFit.cover),
-        ),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text(nameApp, style: Styles.sTyleSplash),
-              const SizedBox(height: 20),
-              AnimatedTextKit(
-                animatedTexts: [
-                  TypewriterAnimatedText(descriptionAPP,
-                      textStyle: Styles.sTyle1,
-                      speed: const Duration(milliseconds: 70),
-                      textAlign: TextAlign.center),
-                ],
-              ),
-            ],
+    return SafeArea(
+      child: Scaffold(
+        body: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage(AssetsData.splashImg), fit: BoxFit.cover),
+          ),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(nameApp, style: Styles.sTyleSplash),
+                const SizedBox(height: 20),
+                AnimatedTextKit(
+                  animatedTexts: [
+                    TypewriterAnimatedText(descriptionAPP,
+                        textStyle: Styles.sTyle1,
+                        speed: const Duration(milliseconds: 70),
+                        textAlign: TextAlign.center),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),

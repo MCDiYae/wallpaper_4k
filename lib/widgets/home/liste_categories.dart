@@ -9,7 +9,7 @@ class ListCategories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(32),
+      padding: const EdgeInsets.all(16),
       child: ListView.builder(
         itemCount: categories.length,
         itemBuilder: (context, index) {
