@@ -16,8 +16,8 @@ class WallpaperPage extends StatelessWidget {
         //appBar: const MyAppBar(title: ''),
         body: WallpaperBody(imageUrl: imageUrl),
         floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            saveImage(imageUrl);
+          onPressed: () async {
+            saveImage(imageUrl, context);
           },
           backgroundColor: backgroundColorAppBar,
           child: const Icon(
