@@ -6,7 +6,7 @@
     
     <application
 
-        android:label="wallpaper_ui"
+        android:label="ArtisticWalls"
         android:requestLegacyExternalStorage="true"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
