@@ -1,8 +1,10 @@
 class AssetsData {
-  static const splashImg = 'assets/images/wallpaper.png';
-  static const progWall = 'assets/images/prog.jpeg';
-  static const natureWall = 'assets/images/natur.jpg';
-  static const carWall = 'assets/images/car.jpg';
-  static const flowerwall = 'assets/images/flower.png';
-  static const beautywall = 'assets/images/beauty.jpg';
+  static const splashImg = 'assets/images/splash.png';
+  static const beachWall = 'assets/images/beach.png';
+  static const natureWall = 'assets/images/nature.png';
+  static const travelWall = 'assets/images/travel.png';
+  static const flowerwall = 'assets/images/flowers.png';
+  static const beautywall = 'assets/images/beautiful.png';
+  static const artwall = 'assets/images/art.png';
+  static const wall4K = 'assets/images/4kwall.png';
 }

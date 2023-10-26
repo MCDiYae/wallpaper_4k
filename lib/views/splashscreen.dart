@@ -10,7 +10,7 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Future.delayed(const Duration(seconds: 3), () {
+    Future.delayed(const Duration(seconds: 4), () {
       // Utilisez AppRoute pour naviguer vers la page d'accueil
       AppRoute.router.go(AppRoute.kHome);
     });

@@ -13,7 +13,6 @@ class WallpaperPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        //appBar: const MyAppBar(title: ''),
         body: WallpaperBody(imageUrl: imageUrl),
         floatingActionButton: FloatingActionButton(
           onPressed: () async {

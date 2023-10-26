@@ -31,15 +31,15 @@ class CardCategory extends StatelessWidget {
             image: DecorationImage(
                 image: AssetImage(imageAsset), fit: BoxFit.cover),
           ),
-          child: Center(
-            child: Text(
-              categoryName,
-              style: TextStyle(
-                  color: whiteColor,
-                  fontSize: 32,
-                  backgroundColor: backgroundColor.withOpacity(0.5)),
-            ),
-          ),
+          // child: Center(
+          //   child: Text(
+          //     categoryName,
+          //     style: TextStyle(
+          //         color: whiteColor,
+          //         fontSize: 32,
+          //         backgroundColor: backgroundColor.withOpacity(0.5)),
+          //   ),
+          // ),
         ),
       ),
     );
