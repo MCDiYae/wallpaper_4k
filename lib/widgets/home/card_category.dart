@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:wallpaper_ui/core/utils/constant.dart';
 import 'package:wallpaper_ui/views/category.dart';
 
 class CardCategory extends StatelessWidget {

@@ -1,4 +1,4 @@
-package com.example.wallpaper_ui
+package me.ghbaloudiyae.ArtisticWalls
 
 import io.flutter.embedding.android.FlutterActivity
 

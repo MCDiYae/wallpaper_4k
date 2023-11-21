@@ -4,9 +4,11 @@ import 'package:wallpaper_ui/core/utils/styles.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
+  final List<Widget> actions;
   const MyAppBar({
     super.key,
     required this.title,
+    this.actions = const [],
   });
 
   @override
@@ -16,6 +18,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
         title,
         style: Styles.sTyleTitle,
       ),
+      actions: actions,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(12), bottomRight: Radius.circular(12)),
