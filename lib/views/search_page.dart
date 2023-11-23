@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:wallpaper_ui/BLoC/cubit/search_cubit.dart';
 
 import 'package:wallpaper_ui/views/wallpaper_view.dart';
-import 'package:wallpaper_ui/widgets/myappbar.dart';
 
 class SearchPage extends StatelessWidget {
   const SearchPage({
@@ -16,7 +15,6 @@ class SearchPage extends StatelessWidget {
     TextEditingController _searchController = TextEditingController();
     return SafeArea(
         child: Scaffold(
-      appBar: const MyAppBar(title: 'search'),
       body: Column(
         children: [
           Padding(
