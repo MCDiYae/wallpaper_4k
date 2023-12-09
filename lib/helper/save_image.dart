@@ -24,6 +24,7 @@ Future<void> saveImage(String imageUrl, BuildContext context) async {
       }
     }
   } else {
+    // ignore: avoid_print
     print('L\'utilisateur a refusé l\'autorisation d\'accès au stockage.');
   }
 }
