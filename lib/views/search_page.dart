@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:wallpaper_ui/BLoC/cubit/search_cubit.dart';
+import 'package:wallpaper_ui/core/utils/constant.dart';
 
 import 'package:wallpaper_ui/views/wallpaper_view.dart';
 
@@ -15,10 +16,14 @@ class SearchPage extends StatelessWidget {
     TextEditingController _searchController = TextEditingController();
     return SafeArea(
         child: Scaffold(
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+      ),
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: TextField(
               controller: _searchController,
               decoration: const InputDecoration(
